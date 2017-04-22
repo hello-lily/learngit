@@ -1,0 +1,3 @@
+the fiveth run ex16.py
+i know line8 input("?")
+this means input a keyboard,because ctrl-c or return impact different way
