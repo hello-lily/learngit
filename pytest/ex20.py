@@ -34,6 +34,7 @@ print ("Now let's rewind, kind of like a tape.")
 
 rewind(current_file)
 #seek means print ever line!
+# define seek from 0
 
 #print seek  ?? what is seek?
 #answer:  print test.txt
@@ -41,10 +42,27 @@ rewind(current_file)
 print ("Let's print three line:")
 
 current_line = 1
+print( " usr for:")
+
+for n  in range(3):
+	n += 1
+	print_a_line(n, current_file)
+#	current_line += 1
+
+print ("current_line:", current_line)
+print ("n: %d" %n)
+# 3
+
+print (" old way\n")
+current_line = 1
+rewind(current_file)
+#current_file.seek(0)
 print_a_line(current_line, current_file)
 #1 input_file  test.txt a space, but print \n
 
-current_line = current_line + 1
+#current_line = current_line + 1
+current_line += 1
+#that ok!
 print_a_line(current_line, current_file)
 #2 input_file
 
