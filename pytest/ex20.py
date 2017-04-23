@@ -58,10 +58,24 @@ for n  in range(3):
 print ("n:", n)
 
 #rewind(current_file)
-x = int(input("which line do you want to see: >"))
-n = reseek(current_file,x)
-print ("seek %d line, the charaters is  %d" %(x,n))
-print ("The result is :", x , current_file.readline())
+def printline():
+	x = int(input("which line do you want to see: >"))
+	n = reseek(current_file,x)
+	print ("seek %d line, the charaters is  %d" %(x,n))
+	print ("The result is :", x , current_file.readline())
+
+# first do
+printline()
+
+def askquestion():
+	print ("do you want to try most?")
+	print ("RETURE for contiue, CTRL -C for cancel!")
+	input (">")
+	return True
+
+while askquestion():
+	printline()
+#        askquestion()
 
 # don't print from line3? why?
 # I was wrong, seek(3) used, begin from the third char
