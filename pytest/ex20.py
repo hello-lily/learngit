@@ -14,6 +14,15 @@ def rewind(f):
 	f.seek(0)
 
 # print what?
+#read the x line
+def reseek(f,x):
+	n = 0
+	f.seek(n)
+	for i in range(x-1):	
+		indata = f.readline()
+		n += len(indata)
+		f.seek(n)
+	return n
 
 def print_a_line(line_count, f):
 	print (line_count,"%s" % f.readline())
@@ -38,31 +47,40 @@ rewind(current_file)
 
 #print seek  ?? what is seek?
 #answer:  print test.txt
-
 print ("Let's print three line:")
 
-current_line = 1
 print( " usr for:")
 
 for n  in range(3):
 	n += 1
 	print_a_line(n, current_file)
-#	current_line += 1
 
-print ("current_line:", current_line)
-print ("n: %d" %n)
-# 3
+print ("n:", n)
 
-print (" old way\n")
-current_line = 1
-rewind(current_file)
-#current_file.seek(0)
-print_a_line(current_line, current_file)
+#rewind(current_file)
+x = int(input("which line do you want to see: >"))
+n = reseek(current_file,x)
+print ("seek %d line, the charaters is  %d" %(x,n))
+print ("The result is :", x , current_file.readline())
+
+# don't print from line3? why?
+# I was wrong, seek(3) used, begin from the third char
+# so if I want to begin from the second line , I will math the first line
+# how to add the first line?
+# 1\ calculate first line's char
+# 2\ because the begin number is 0
+#    so the calculated result is the next line begin
+# 3\ seek from the number, then print!
+# def reseek()
+
 #1 input_file  test.txt a space, but print \n
 
-#current_line = current_line + 1
-current_line += 1
+print (" old way\n")
+rewind(current_file)
+current_line = 1
+print_a_line(current_line, current_file)
 #that ok!
+current_line += 1
 print_a_line(current_line, current_file)
 #2 input_file
 
@@ -71,3 +89,4 @@ print_a_line(current_line, current_file)
 #3 input_file.readline
 #what is readline?
 
+current_file.close()
