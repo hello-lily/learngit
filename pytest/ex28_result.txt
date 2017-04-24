@@ -1,0 +1,299 @@
+$ python3 ex28.py ex28_test.txt
+
+=========================
+QUESTION: 
+True and True
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: True and True
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+False and True
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: False and True
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+1 == 1 and 2 == 1
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: 1 == 1 and 2 == 1
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+"test" == "test"
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: "test" == "test"
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+1 == 1 or 2 != 1
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: 1 == 1 or 2 != 1
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+True and 1 == 1
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: True and 1 == 1
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+False and 0 != 0
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: False and 0 != 0
+
+	Sorry!
+	------------------
+#false and false   false   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=========================
+QUESTION: 
+True or 1 == 1
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: True or 1 == 1
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+"test" == "testing"
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: "test" == "testing"
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+1 != 0 and 2 == 1
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: 1 != 0 and 2 == 1
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+"test" != "testing"
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: "test" != "testing"
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+"test" == 1
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: "test" == 1
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+not (True and False)
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: not (True and False)
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+not (1 == 1 and 0 != 1)
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: not (1 == 1 and 0 != 1)
+
+	Sorry!
+	------------------
+# not( true and true)  not true   false!!!!!!!!!!!!!!!!!!!!!!!!
+=========================
+QUESTION: 
+not (10 == 1 or 1000 == 1000)
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: not (10 == 1 or 1000 == 1000)
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+not (1 != 10 or 3 == 4)
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: not (1 != 10 or 3 == 4)
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+not ("testing" == "testing" and "Zed" == "Cool Guy")
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: not ("testing" == "testing" and "Zed" == "Cool Guy")
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+1 == 1 and (not ("testing" == 1 or 1 == 0))
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: 1 == 1 and (not ("testing" == 1 or 1 == 0))
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+"chunky" == "bacon" and (not (3 == 4 or 3 == 3))
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: "chunky" == "bacon" and (not (3 == 4 or 3 == 3))
+
+	Smart!
+	--------------------
+
+=========================
+QUESTION: 
+3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))and True
+True or False?
+True hit t; False hit f
+>t
+you choose yes! 
+
+	-----------------------------	
+	Record: 3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))and True
+
+	Sorry!
+	------------------
+#   true and  not (t or f) and t      t and not(t) and t   f  ??????????????????
+=========================
+#what's that?
+#in test more line~~~
+QUESTION: 
+False and True
+True or False?
+True hit t; False hit f
+>f
+you said no!
+
+	-----------------------------	
+	Record: False and True
+
+	Smart!
+	--------------------
+right: 18
+
