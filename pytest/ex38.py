@@ -3,6 +3,10 @@
 class Thing:
 	def test(self,message):
 		print("%s"% message)
+def printwhile(si,stuff):
+	for n in range(len(stuff)+1):
+		print(si.join(stuff[0:n]))
+
 
 a = Thing()
 a.test("hello world")
@@ -26,9 +30,11 @@ print ("There we go: ",stuff)
 
 print ("Let's do some things with stuff.")
 
-print (stuff[1])
-print (stuff[-1])
-print (stuff.pop())
-print (' '.join(stuff[0:5]))
+#print (stuff[1])
+#print (stuff[-1])
+#print (stuff.pop())
+#print (' '.join(stuff[0:5]))
 #print (stuff)
-print ('#'.join(stuff[3:6]))
+#print ('#'.join(stuff[3:6]))
+printwhile(' ',stuff)
+printwhile('# ',stuff)
