@@ -14,6 +14,7 @@ WORD_URL = "words.txt"
 currentfile = open(WORD_URL)
 WORDS = []
 # a empty list
+resu = []
 
 PHRASES = {
     "class %%%(%%%):":
@@ -59,6 +60,7 @@ def convert(snippet, phrase):
     for i in range(0, snippet.count("@@@")):
         param_count = random.randint(1,3)
         param_names.append(', '.join(random.sample(WORDS, param_count)))
+    print ("param_names:",param_names)
 
     for sentence in snippet, phrase:
         result = sentence[:]
@@ -66,35 +68,46 @@ def convert(snippet, phrase):
         # fake class names
         for word in class_names:
             result = result.replace("%%%", word, 1)
-
+        print("result class:",result)
+        
         # fake other names
         for word in other_names:
             result = result.replace("***", word, 1)
 
+        print("result other:",result)
         # fake parameter lists
         for word in param_names:
             result = result.replace("@@@", word, 1)
 
+        print("result para:",result)
         results.append(result)
 
+        print("result end:",result)
     return results
 
 
 # keep going until they hit CTRL-D
 try:
 	while True:
-		snippets = PHRASES.keys()
-		random.shuffle(snippets)
+		snippets  = PHRASES.keys()
+		print("snippets:",snippets)
+		random.shuffle(list(snippets))
 
 		for snippet in snippets:
 			phrase = PHRASES[snippet]
+#			print( "convert returen is:",convert(snippet, phrase),"\n\n")
+# ['class Cough(object):\n\tdef __init__(self, airport)', 'class Cough has-a __init__ that takes self and airport parameters.']	
 			question, answer = convert(snippet, phrase)
+		#	resu = convert(snippet,phrase)
+		#	question = resu[0]
+		#	answer = resu[1]
+		#	print( "question is %s\nanswer is %s:"%(question,answer))
 			if PHRASE_FIRST:
-				question, answer = answer, question 
-
+		#		question= resu[1] 
+		#		answer = resu[0] 
+				question,answer = answer,question
 			print (question)
-
-		        raw_input(">")
+			i=input('>')
 			print ("ANSWER:  %s \n\n" % answer)
 except EOFError:
 	print ("\nBye")
